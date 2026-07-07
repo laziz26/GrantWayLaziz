@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <!-- Meta ma'lumotlar -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GrantWay - Matematika faniga mukammal tayyorlaning. Formulalar, mavzular, testlar va DTM maslahatlari." />
+    <meta name="theme-color" content="#0a0e27" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    
+    <!-- Fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    
+    <title>GrantWay - Matematika | Grant sari ishonchli yo'l</title>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HEADER: Bosh sahifadagi header bilan bir xil -->
+    <!-- ============================================ -->
+    <header class="header" role="banner" aria-label="Sayt sarlavhasi">
+        <div class="header__background" aria-hidden="true"></div>
+        <div class="header__overlay" aria-hidden="true"></div>
+        
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="../index.html" class="header__logo" aria-label="GrantWay bosh sahifa">
+                <svg class="header__logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                    <path d="M20 8L21.8 15.6L29.6 17.4L23.4 22.6L25.2 30.2L20 26.6L14.8 30.2L16.6 22.6L10.4 17.4L18.2 15.6L20 8Z" fill="white" opacity="0.3" />
+                </svg>
+                <span class="header__logo-text">GrantWay</span>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="header__nav" role="navigation" aria-label="Asosiy menyu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="../index.html" class="header__nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../index.html#fanlar" class="header__nav-link header__nav-link--active">Fanlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../testlar.html" class="header__nav-link">Testlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../yangiliklar.html" class="header__nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../aloqa.html" class="header__nav-link">Aloqa</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Burger Menu -->
+            <button class="header__burger" aria-label="Menyuni ochish/yopish" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="header__mobile" id="mobile-menu" role="navigation" aria-label="Mobil menyu" hidden>
+            <ul class="header__mobile-list">
+                <li class="header__mobile-item">
+                    <a href="../index.html" class="header__mobile-link">Bosh sahifa</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../index.html#fanlar" class="header__mobile-link header__mobile-link--active">Fanlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../testlar.html" class="header__mobile-link">Testlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../yangiliklar.html" class="header__mobile-link">Yangiliklar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../aloqa.html" class="header__mobile-link">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN: Matematika sahifasi kontenti -->
+    <!-- ============================================ -->
+    <main class="main" role="main">
+        <!-- ============================================ -->
+        <!-- HERO: Matematika faniga mukammal tayyorlaning -->
+        <!-- ============================================ -->
+        <section class="math-hero" aria-label="Matematika banneri">
+            <div class="math-hero__background" aria-hidden="true">
+                <!-- Matematik formulalar fonida -->
+                <span class="math-hero__formula math-hero__formula--1">π</span>
+                <span class="math-hero__formula math-hero__formula--2">Σ</span>
+                <span class="math-hero__formula math-hero__formula--3">√</span>
+                <span class="math-hero__formula math-hero__formula--4">∫</span>
+                <span class="math-hero__formula math-hero__formula--5">x²</span>
+                <span class="math-hero__formula math-hero__formula--6">∞</span>
+                <span class="math-hero__formula math-hero__formula--7">∑</span>
+                <span class="math-hero__formula math-hero__formula--8">∏</span>
+                <span class="math-hero__formula math-hero__formula--9">∂</span>
+                <span class="math-hero__formula math-hero__formula--10">∆</span>
+            </div>
+            
+            <div class="container math-hero__container">
+                <div class="math-hero__content">
+                    <div class="math-hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M1.333 12L5.333 4L6.667 6.667L9.333 2.667L10.667 5.333L14.667 1.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4 13.333L6.667 9.333L9.333 13.333L12 9.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>2026 DTM</span>
+                    </div>
+                    
+                    <h1 class="math-hero__title">
+                        Matematika faniga <br />
+                        <span class="math-hero__title-highlight">mukammal tayyorlaning</span>
+                    </h1>
+                    
+                    <p class="math-hero__description">
+                        Formulalarni tushuning, masalalarni tez yeching va grant sari dadil qadam tashlang.
+                    </p>
+                    
+                    <div class="math-hero__actions">
+                        <a href="#topics" class="math-hero__cta cta-button">
+                            <span class="cta-button__text">Mavzularni boshlash</span>
+                            <span class="cta-button__ripple" aria-hidden="true"></span>
+                        </a>
+                        <a href="#statistics" class="math-hero__scroll" aria-label="Pastga scroll">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- STATISTIKA: Animated Counter -->
+        <!-- ============================================ -->
+        <section class="math-statistics" id="statistics" aria-label="Matematika statistikasi">
+            <div class="container">
+                <div class="math-statistics__grid">
+                    <div class="math-statistic-item">
+                        <span class="math-statistic-item__number" data-count="120" data-duration="2000">0</span>
+                        <span class="math-statistic-item__suffix">+</span>
+                        <span class="math-statistic-item__label">Mavzu</span>
+                    </div>
+                    <div class="math-statistic-item">
+                        <span class="math-statistic-item__number" data-count="800" data-duration="2000">0</span>
+                        <span class="math-statistic-item__suffix">+</span>
+                        <span class="math-statistic-item__label">Masala</span>
+                    </div>
+                    <div class="math-statistic-item">
+                        <span class="math-statistic-item__number" data-count="100" data-duration="2000">0</span>
+                        <span class="math-statistic-item__suffix">+</span>
+                        <span class="math-statistic-item__label">Test</span>
+                    </div>
+                    <div class="math-statistic-item">
+                        <span class="math-statistic-item__number" data-count="95" data-duration="2000">0</span>
+                        <span class="math-statistic-item__suffix">%</span>
+                        <span class="math-statistic-item__label">Muvaffaqiyat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- MAVZULAR: 12 ta matematik mavzu -->
+        <!-- ============================================ -->
+        <section class="math-topics" id="topics" aria-label="Matematika mavzulari">
+            <div class="container">
+                <div class="math-topics__header">
+                    <h2 class="math-topics__title">Mavzular</h2>
+                    <p class="math-topics__subtitle">Barcha mavzularni bosqichma-bosqich o'rganing</p>
+                </div>
+                
+                <div class="math-topics__grid">
+                    <!-- Natural sonlar -->
+                    <article class="topic-card" data-topic="natural">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="8" y="8" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2.5" />
+                                <text x="14" y="27" font-family="JetBrains Mono" font-size="18" font-weight="700" fill="currentColor">N</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Natural sonlar</h3>
+                        <p class="topic-card__description">1, 2, 3, ... sonlar va ular ustida amallar</p>
+                        <button class="topic-card__button" aria-label="Natural sonlar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Kasrlar -->
+                    <article class="topic-card" data-topic="fractions">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <line x1="6" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="2.5" />
+                                <text x="10" y="15" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="currentColor">1</text>
+                                <text x="10" y="28" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="currentColor">2</text>
+                                <text x="22" y="15" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="currentColor">3</text>
+                                <text x="22" y="28" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="currentColor">4</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Kasrlar</h3>
+                        <p class="topic-card__description">Oddiy va o'nli kasrlar, ular ustida amallar</p>
+                        <button class="topic-card__button" aria-label="Kasrlar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Foiz -->
+                    <article class="topic-card" data-topic="percent">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="26" cy="26" r="5" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M18 12L22 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                                <text x="11" y="17" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="currentColor">%</text>
+                                <text x="23" y="29" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="currentColor">%</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Foiz</h3>
+                        <p class="topic-card__description">Foiz hisoblash, foizga doir masalalar</p>
+                        <button class="topic-card__button" aria-label="Foiz mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Tenglamalar -->
+                    <article class="topic-card" data-topic="equations">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="6" y="22" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="currentColor">ax²+bx+c=0</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Tenglamalar</h3>
+                        <p class="topic-card__description">Chiziqli, kvadrat va yuqori darajali tenglamalar</p>
+                        <button class="topic-card__button" aria-label="Tenglamalar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Tengsizliklar -->
+                    <article class="topic-card" data-topic="inequalities">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="6" y="22" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="currentColor">x² &lt; 4x</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Tengsizliklar</h3>
+                        <p class="topic-card__description">Chiziqli, kvadrat va ratsional tengsizliklar</p>
+                        <button class="topic-card__button" aria-label="Tengsizliklar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Funksiya -->
+                    <article class="topic-card" data-topic="functions">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M6 30C6 30 12 18 20 18C28 18 34 30 34 30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                                <circle cx="20" cy="14" r="3" stroke="currentColor" stroke-width="2.5" />
+                                <text x="6" y="14" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="currentColor">f(x)</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Funksiya</h3>
+                        <p class="topic-card__description">Funksiyalar, ularning xossalari va grafiklari</p>
+                        <button class="topic-card__button" aria-label="Funksiya mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Logarifm -->
+                    <article class="topic-card" data-topic="logarithms">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="4" y="24" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="currentColor">logₐb</text>
+                                <text x="4" y="34" font-family="JetBrains Mono" font-size="10" font-weight="400" fill="currentColor" opacity="0.5">= c</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Logarifm</h3>
+                        <p class="topic-card__description">Logarifmlar va ularning xossalari</p>
+                        <button class="topic-card__button" aria-label="Logarifm mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Trigonometriya -->
+                    <article class="topic-card" data-topic="trigonometry">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M20 8L20 20L28 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="18" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">θ</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Trigonometriya</h3>
+                        <p class="topic-card__description">Sinus, kosinus, tangens va formulalar</p>
+                        <button class="topic-card__button" aria-label="Trigonometriya mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Hosila -->
+                    <article class="topic-card" data-topic="derivatives">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="6" y="22" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="currentColor">f'(x)</text>
+                                <text x="6" y="32" font-family="JetBrains Mono" font-size="10" font-weight="400" fill="currentColor" opacity="0.5">= lim</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Hosila</h3>
+                        <p class="topic-card__description">Hosila tushunchasi va differensiallash</p>
+                        <button class="topic-card__button" aria-label="Hosila mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Integral -->
+                    <article class="topic-card" data-topic="integrals">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="6" y="26" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="currentColor">∫f(x)dx</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Integral</h3>
+                        <p class="topic-card__description">Integral tushunchasi va integrallash</p>
+                        <button class="topic-card__button" aria-label="Integral mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Ehtimollar -->
+                    <article class="topic-card" data-topic="probability">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <text x="6" y="22" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="currentColor">P(A)</text>
+                                <text x="6" y="32" font-family="JetBrains Mono" font-size="10" font-weight="400" fill="currentColor" opacity="0.5">= n/N</text>
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Ehtimollar</h3>
+                        <p class="topic-card__description">Ehtimollar nazariyasi asoslari</p>
+                        <button class="topic-card__button" aria-label="Ehtimollar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Geometriya -->
+                    <article class="topic-card" data-topic="geometry">
+                        <div class="topic-card__icon-wrapper">
+                            <svg class="topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="8" y="12" width="24" height="16" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M8 28L20 8L32 28" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                        </div>
+                        <h3 class="topic-card__title">Geometriya</h3>
+                        <p class="topic-card__description">Shakllar, burchaklar va ularning xossalari</p>
+                        <button class="topic-card__button" aria-label="Geometriya mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- FORMULALAR: Eng ko'p uchraydigan formulalar -->
+        <!-- ============================================ -->
+        <section class="math-formulas" id="formulas" aria-label="Matematik formulalar">
+            <div class="container">
+                <div class="math-formulas__header">
+                    <h2 class="math-formulas__title">Eng ko'p uchraydigan formulalar</h2>
+                    <p class="math-formulas__subtitle">Tez va qulay foydalanish uchun</p>
+                </div>
+                
+                <div class="math-formulas__grid">
+                    <!-- Formula 1 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Kvadrat tenglama</span>
+                            <span class="formula-card__formula">ax² + bx + c = 0</span>
+                            <span class="formula-card__solution">x = (-b ± √(b² - 4ac)) / 2a</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="x = (-b ± √(b² - 4ac)) / 2a">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+
+                    <!-- Formula 2 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Pifagor teoremasi</span>
+                            <span class="formula-card__formula">a² + b² = c²</span>
+                            <span class="formula-card__solution">c = √(a² + b²)</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="a² + b² = c²">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+
+                    <!-- Formula 3 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Trigonometrik ayniyat</span>
+                            <span class="formula-card__formula">sin²(θ) + cos²(θ) = 1</span>
+                            <span class="formula-card__solution">sin(θ) = cos(90° - θ)</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="sin²(θ) + cos²(θ) = 1">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+
+                    <!-- Formula 4 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Logarifmik ayniyat</span>
+                            <span class="formula-card__formula">logₐ(b) = c</span>
+                            <span class="formula-card__solution">aᶜ = b</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="logₐ(b) = c">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+
+                    <!-- Formula 5 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Hosila qoidasi</span>
+                            <span class="formula-card__formula">(f·g)' = f'·g + f·g'</span>
+                            <span class="formula-card__solution">Ko'paytmaning hosilasi</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="(f·g)' = f'·g + f·g'">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+
+                    <!-- Formula 6 -->
+                    <div class="formula-card">
+                        <div class="formula-card__content">
+                            <span class="formula-card__name">Integral qoidasi</span>
+                            <span class="formula-card__formula">∫xⁿ dx = xⁿ⁺¹/(n+1) + C</span>
+                            <span class="formula-card__solution">n ≠ -1</span>
+                        </div>
+                        <button class="formula-card__copy" aria-label="Formulani nusxalash" data-formula="∫xⁿ dx = xⁿ⁺¹/(n+1) + C">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <span class="formula-card__copy-tooltip">Nusxalash</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- BILASIZMI: Matematika faktlari -->
+        <!-- ============================================ -->
+        <section class="math-facts" aria-label="Matematika haqida qiziqarli faktlar">
+            <div class="container">
+                <div class="math-facts__header">
+                    <h2 class="math-facts__title">Bilasizmi?</h2>
+                    <p class="math-facts__subtitle">Matematika olamidan qiziqarli ma'lumotlar</p>
+                </div>
+                
+                <div class="math-facts__accordion">
+                    <!-- Fakt 1 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-1">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">1-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-1" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Matematika so'zi yunoncha "mathema" (bilim) so'zidan kelib chiqqan. Qadimgi Yunonistonda bu so'z barcha fanlarni anglatgan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 2 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-2">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">2-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-2" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Nol (0) raqami hind matematiklari tomonidan kashf etilgan. Bu kashfiyot matematikada inqilobiy o'zgarishlarga olib keldi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 3 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-3">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">3-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-3" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Pi (π) sonining 3.14 dan keyingi raqamlari hech qachon takrorlanmaydi. Bugungi kunda π ning 31 trillion raqami ma'lum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 4 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-4">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">4-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-4" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Fibonachchi ketma-ketligi (1, 1, 2, 3, 5, 8, 13, ...) tabiatda juda ko'p uchraydi. Masalan, kungaboqar urug'lari shu tartibda joylashgan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 5 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-5">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">5-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-5" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Al-Xorazmiy "Al-jabr" asarida algebra atamasini kiritgan. U 9-asrda yashab, hozirgi O'zbekiston hududida ilmiy faoliyat olib borgan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 6 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-6">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">6-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-6" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Dunyodagi eng qadimiy matematik matnlar Misr va Mesopotamiyada topilgan. Bu matnlar taxminan 4000 yillik tarixga ega.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 7 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-7">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">7-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-7" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Möbius tasmasi - bu matematik ob'ekt bo'lib, u faqat bitta sirt va bitta chekkaga ega. Bu topologiyada muhim tushuncha.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 8 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-8">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">8-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-8" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Euler soni (e ≈ 2.71828) matematikadagi eng muhim doimiylardan biri. U tabiiy logarifm asosini tashkil qiladi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 9 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-9">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">9-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-9" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Beruniy 11-asrda yer radiusini deyarli aniq hisoblagan. U bu ishni trigonometrik formulalar yordamida amalga oshirgan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 10 -->
+                    <div class="math-fact-item" role="listitem">
+                        <button class="math-fact-item__trigger" aria-expanded="false" aria-controls="math-fact-10">
+                            <span class="math-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="math-fact-item__title">10-fakt</span>
+                            <span class="math-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="math-fact-item__content" id="math-fact-10" role="region">
+                            <div class="math-fact-item__body">
+                                <p>Matematikada "Oltin nisbat" (φ ≈ 1.618) san'at va arxitekturada ko'p qo'llaniladi. Bu nisbat tabiatda ham ko'p uchraydi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- DTM MASLAHATLARI: Timeline -->
+        <!-- ============================================ -->
+        <section class="math-tips" aria-label="DTM maslahatlari">
+            <div class="container">
+                <div class="math-tips__header">
+                    <h2 class="math-tips__title">DTM maslahatlari</h2>
+                    <p class="math-tips__subtitle">Matematika fanidan yuqori ball olish uchun tavsiyalar</p>
+                </div>
+                
+                <div class="math-tips__timeline">
+                    <!-- Maslahat 1 -->
+                    <div class="tip-item">
+                        <div class="tip-item__number" aria-hidden="true">1</div>
+                        <div class="tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="tip-item__content">
+                            <h3 class="tip-item__title">Vaqtni to'g'ri taqsimlang</h3>
+                            <p class="tip-item__description">Har bir masalaga 2-3 daqiqadan ko'p vaqt sarflamang. Qiyin masalalarni keyinga qoldiring.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 2 -->
+                    <div class="tip-item">
+                        <div class="tip-item__number" aria-hidden="true">2</div>
+                        <div class="tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="tip-item__content">
+                            <h3 class="tip-item__title">Formulalarni yodlang</h3>
+                            <p class="tip-item__description">Asosiy formulalarni yod oling. Bu sizga vaqt tejaydi va xatolarni kamaytiradi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 3 -->
+                    <div class="tip-item">
+                        <div class="tip-item__number" aria-hidden="true">3</div>
+                        <div class="tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="tip-item__content">
+                            <h3 class="tip-item__title">Hisob-kitoblarni tekshiring</h3>
+                            <p class="tip-item__description">Har bir hisob-kitobni 2 marta tekshiring. Kichik xatolar katta natijalarga olib kelishi mumkin.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 4 -->
+                    <div class="tip-item">
+                        <div class="tip-item__number" aria-hidden="true">4</div>
+                        <div class="tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="tip-item__content">
+                            <h3 class="tip-item__title">Amaliyot qiling</h3>
+                            <p class="tip-item__description">Har kuni kamida 20 ta masala yeching. Amaliyot matematikani o'zlashtirishning eng samarali usuli.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 5 -->
+                    <div class="tip-item">
+                        <div class="tip-item__number" aria-hidden="true">5</div>
+                        <div class="tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="tip-item__content">
+                            <h3 class="tip-item__title">Dam olishni unutmang</h3>
+                            <p class="tip-item__description">Miya dam olishga muhtoj. Har 45 daqiqada 5-10 daqiqa tanaffus qiling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- VIDEO DARSLAR: Placeholder -->
+        <!-- ============================================ -->
+        <section class="math-videos" aria-label="Video darslar">
+            <div class="container">
+                <div class="math-videos__header">
+                    <h2 class="math-videos__title">Video darslar</h2>
+                    <p class="math-videos__subtitle">Tez orada qo'shiladi</p>
+                </div>
+                
+                <div class="math-videos__grid">
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-card__thumbnail">
+                            <div class="video-card__placeholder">
+                                <span class="video-card__duration">15:30</span>
+                            </div>
+                            <button class="video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-card__content">
+                            <h3 class="video-card__title">Natural sonlar va ular ustida amallar</h3>
+                            <p class="video-card__description">Boshlang'ich daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-card__thumbnail">
+                            <div class="video-card__placeholder">
+                                <span class="video-card__duration">22:45</span>
+                            </div>
+                            <button class="video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-card__content">
+                            <h3 class="video-card__title">Kasrlar va foiz hisoblash</h3>
+                            <p class="video-card__description">O'rta daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-card__thumbnail">
+                            <div class="video-card__placeholder">
+                                <span class="video-card__duration">18:20</span>
+                            </div>
+                            <button class="video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-card__content">
+                            <h3 class="video-card__title">Kvadrat tenglamalar</h3>
+                            <p class="video-card__description">Yuqori daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-card">
+                        <div class="video-card__thumbnail">
+                            <div class="video-card__placeholder">
+                                <span class="video-card__duration">25:10</span>
+                            </div>
+                            <button class="video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-card__content">
+                            <h3 class="video-card__title">Trigonometrik ayniyatlar</h3>
+                            <p class="video-card__description">Yuqori daraja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- AMALIY TEST: CTA Section -->
+        <!-- ============================================ -->
+        <section class="math-test-cta" aria-label="Amaliy test">
+            <div class="container">
+                <div class="math-test-cta__content">
+                    <div class="math-test-cta__icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="8" stroke="currentColor" stroke-width="2.5" />
+                            <path d="M20 28L28 36L44 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <text x="8" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">✓</text>
+                        </svg>
+                    </div>
+                    <h2 class="math-test-cta__title">Bilimingizni sinab ko'ring</h2>
+                    <p class="math-test-cta__description">
+                        Matematika fanidan amaliy test topshiring va natijangizni bilib oling.
+                    </p>
+                    <a href="../testlar.html" class="math-test-cta__button cta-button cta-button--large">
+                        <span class="cta-button__text">Testni boshlash</span>
+                        <span class="cta-button__ripple" aria-hidden="true"></span>
+                        <span class="cta-button__glow" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Bosh sahifadagi footer bilan bir xil -->
+    <!-- ============================================ -->
+    <footer class="footer" role="contentinfo" aria-label="Sayt pastki qismi">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                        </svg>
+                        <span>GrantWay</span>
+                    </a>
+                    <p class="footer__description">Grant sari ishonchli yo'l</p>
+                </div>
+                
+                <nav class="footer__nav" aria-label="Footer menyusi">
+                    <ul class="footer__nav-list">
+                        <li><a href="../index.html">Bosh sahifa</a></li>
+                        <li><a href="../testlar.html">Testlar</a></li>
+                        <li><a href="../yangiliklar.html">Yangiliklar</a></li>
+                        <li><a href="../aloqa.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__social">
+                    <span class="footer__social-label">Biz bilan bog'laning</span>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Telegram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M22 2L2 11L10 14L13 22L16 16L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M16 16L20 20M16 16L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M10 9L15 12L10 15V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 GrantWay. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================ -->
+    <script src="../script.js" defer></script>
+    <script src="../pages/pages.js" defer></script>
+</body>
+</html>

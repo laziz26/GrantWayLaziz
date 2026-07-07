@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <!-- Meta ma'lumotlar -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GrantWay - DTM testlar platformasi. Matematika, Tarix, Ona tili, Kimyo va Ingliz tili fanlaridan interaktiv testlar." />
+    <meta name="theme-color" content="#0a0e27" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    
+    <!-- Fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    
+    <title>GrantWay - Testlar | Grant sari ishonchli yo'l</title>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HEADER: Bosh sahifadagi header bilan bir xil -->
+    <!-- ============================================ -->
+    <header class="header" role="banner" aria-label="Sayt sarlavhasi">
+        <div class="header__background" aria-hidden="true"></div>
+        <div class="header__overlay" aria-hidden="true"></div>
+        
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="../index.html" class="header__logo" aria-label="GrantWay bosh sahifa">
+                <svg class="header__logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                    <path d="M20 8L21.8 15.6L29.6 17.4L23.4 22.6L25.2 30.2L20 26.6L14.8 30.2L16.6 22.6L10.4 17.4L18.2 15.6L20 8Z" fill="white" opacity="0.3" />
+                </svg>
+                <span class="header__logo-text">GrantWay</span>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="header__nav" role="navigation" aria-label="Asosiy menyu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="../index.html" class="header__nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../index.html#fanlar" class="header__nav-link">Fanlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./testlar.html" class="header__nav-link header__nav-link--active">Testlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./yangiliklar.html" class="header__nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./aloqa.html" class="header__nav-link">Aloqa</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Burger Menu -->
+            <button class="header__burger" aria-label="Menyuni ochish/yopish" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="header__mobile" id="mobile-menu" role="navigation" aria-label="Mobil menyu" hidden>
+            <ul class="header__mobile-list">
+                <li class="header__mobile-item">
+                    <a href="../index.html" class="header__mobile-link">Bosh sahifa</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../index.html#fanlar" class="header__mobile-link">Fanlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./testlar.html" class="header__mobile-link header__mobile-link--active">Testlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./yangiliklar.html" class="header__mobile-link">Yangiliklar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./aloqa.html" class="header__mobile-link">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN: Testlar sahifasi kontenti -->
+    <!-- ============================================ -->
+    <main class="main" role="main">
+        <!-- ============================================ -->
+        <!-- HERO: Testlarga tayyorlaning -->
+        <!-- ============================================ -->
+        <section class="tests-hero" aria-label="Testlar banneri">
+            <div class="tests-hero__background" aria-hidden="true">
+                <span class="tests-hero__icon tests-hero__icon--1">📝</span>
+                <span class="tests-hero__icon tests-hero__icon--2">✓</span>
+                <span class="tests-hero__icon tests-hero__icon--3">✗</span>
+                <span class="tests-hero__icon tests-hero__icon--4">📊</span>
+                <span class="tests-hero__icon tests-hero__icon--5">🏆</span>
+                <span class="tests-hero__icon tests-hero__icon--6">⏱</span>
+                <span class="tests-hero__icon tests-hero__icon--7">🎯</span>
+                <span class="tests-hero__icon tests-hero__icon--8">📚</span>
+            </div>
+            
+            <div class="container tests-hero__container">
+                <div class="tests-hero__content">
+                    <div class="tests-hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Interaktiv</span>
+                    </div>
+                    
+                    <h1 class="tests-hero__title">
+                        Testlarga <br />
+                        <span class="tests-hero__title-highlight">tayyorlaning</span>
+                    </h1>
+                    
+                    <p class="tests-hero__description">
+                        O'z bilimingizni sinab ko'ring, natijalaringizni tahlil qiling va grant sari ishonchli qadam tashlang.
+                    </p>
+                    
+                    <div class="tests-hero__actions">
+                        <a href="#subjects" class="tests-hero__cta cta-button">
+                            <span class="cta-button__text">Testlarni boshlash</span>
+                            <span class="cta-button__ripple" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- FILTR: Fanlar bo'yicha filtr -->
+        <!-- ============================================ -->
+        <section class="tests-filter" id="subjects" aria-label="Test filtri">
+            <div class="container">
+                <div class="tests-filter__wrapper">
+                    <div class="tests-filter__tabs" role="tablist" aria-label="Fanlar">
+                        <button class="tests-filter__tab tests-filter__tab--active" role="tab" aria-selected="true" data-filter="all">
+                            <span>Barchasi</span>
+                            <span class="tests-filter__count">320</span>
+                        </button>
+                        <button class="tests-filter__tab" role="tab" aria-selected="false" data-filter="matematika">
+                            <span>Matematika</span>
+                            <span class="tests-filter__count">80</span>
+                        </button>
+                        <button class="tests-filter__tab" role="tab" aria-selected="false" data-filter="tarix">
+                            <span>Tarix</span>
+                            <span class="tests-filter__count">60</span>
+                        </button>
+                        <button class="tests-filter__tab" role="tab" aria-selected="false" data-filter="ona-tili">
+                            <span>Ona tili</span>
+                            <span class="tests-filter__count">70</span>
+                        </button>
+                        <button class="tests-filter__tab" role="tab" aria-selected="false" data-filter="kimyo">
+                            <span>Kimyo</span>
+                            <span class="tests-filter__count">55</span>
+                        </button>
+                        <button class="tests-filter__tab" role="tab" aria-selected="false" data-filter="ingliz">
+                            <span>Ingliz tili</span>
+                            <span class="tests-filter__count">55</span>
+                        </button>
+                    </div>
+                    
+                    <div class="tests-filter__search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2" />
+                            <path d="M13 13L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <input type="text" class="tests-filter__input" placeholder="Test qidirish..." aria-label="Test qidirish" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- TESTLAR: Grid ko'rinishida -->
+        <!-- ============================================ -->
+        <section class="tests-grid" aria-label="Testlar ro'yxati">
+            <div class="container">
+                <div class="tests-grid__wrapper">
+                    <!-- Matematika testlari -->
+                    <div class="test-card" data-subject="matematika">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-matematika);"></span>
+                                <span class="test-card__subject-name">Matematika</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--medium">O'rta</span>
+                        </div>
+                        <h3 class="test-card__title">Algebra asoslari</h3>
+                        <p class="test-card__description">Tenglamalar, tengsizliklar va funksiyalar</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                20 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                15 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.8
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Algebra asoslari testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="matematika">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-matematika);"></span>
+                                <span class="test-card__subject-name">Matematika</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--hard">Qiyin</span>
+                        </div>
+                        <h3 class="test-card__title">Geometriya</h3>
+                        <p class="test-card__description">Shakllar, burchaklar va ularning xossalari</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                25 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                20 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.9
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Geometriya testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="matematika">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-matematika);"></span>
+                                <span class="test-card__subject-name">Matematika</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--easy">Oson</span>
+                        </div>
+                        <h3 class="test-card__title">Natural sonlar</h3>
+                        <p class="test-card__description">Natural sonlar ustida amallar</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                15 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                10 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.7
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Natural sonlar testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Tarix testlari -->
+                    <div class="test-card" data-subject="tarix">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-tarix);"></span>
+                                <span class="test-card__subject-name">Tarix</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--medium">O'rta</span>
+                        </div>
+                        <h3 class="test-card__title">O'zbekiston tarixi</h3>
+                        <p class="test-card__description">Qadimgi davrdan hozirgi kungacha</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                20 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                15 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.8
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="O'zbekiston tarixi testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="tarix">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-tarix);"></span>
+                                <span class="test-card__subject-name">Tarix</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--hard">Qiyin</span>
+                        </div>
+                        <h3 class="test-card__title">Jahon tarixi</h3>
+                        <p class="test-card__description">Muhim tarixiy voqealar va shaxslar</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                30 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                25 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.9
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Jahon tarixi testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Ona tili testlari -->
+                    <div class="test-card" data-subject="ona-tili">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-ona-tili);"></span>
+                                <span class="test-card__subject-name">Ona tili</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--medium">O'rta</span>
+                        </div>
+                        <h3 class="test-card__title">Grammatika</h3>
+                        <p class="test-card__description">So'z turkumlari va gap bo'laklari</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                20 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                15 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.7
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Grammatika testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="ona-tili">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-ona-tili);"></span>
+                                <span class="test-card__subject-name">Ona tili</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--easy">Oson</span>
+                        </div>
+                        <h3 class="test-card__title">Imlo qoidalari</h3>
+                        <p class="test-card__description">To'g'ri yozish qoidalari</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                15 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                10 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.6
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Imlo qoidalari testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Kimyo testlari -->
+                    <div class="test-card" data-subject="kimyo">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-kimyo);"></span>
+                                <span class="test-card__subject-name">Kimyo</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--medium">O'rta</span>
+                        </div>
+                        <h3 class="test-card__title">Organik kimyo</h3>
+                        <p class="test-card__description">Uglevodorodlar va ularning hosilalari</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                25 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                18 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.8
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Organik kimyo testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="kimyo">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-kimyo);"></span>
+                                <span class="test-card__subject-name">Kimyo</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--hard">Qiyin</span>
+                        </div>
+                        <h3 class="test-card__title">Norganik kimyo</h3>
+                        <p class="test-card__description">Metallar va ularning birikmalari</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                30 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                20 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.9
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Norganik kimyo testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Ingliz tili testlari -->
+                    <div class="test-card" data-subject="ingliz">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-ingliz);"></span>
+                                <span class="test-card__subject-name">Ingliz tili</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--medium">O'rta</span>
+                        </div>
+                        <h3 class="test-card__title">Grammar</h3>
+                        <p class="test-card__description">Tenses, modals va conditionals</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                20 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                15 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.8
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Grammar testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="ingliz">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-ingliz);"></span>
+                                <span class="test-card__subject-name">Ingliz tili</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--easy">Oson</span>
+                        </div>
+                        <h3 class="test-card__title">Vocabulary</h3>
+                        <p class="test-card__description">So'z boyligi va idiomalar</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                15 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                12 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.7
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Vocabulary testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Qo'shimcha testlar -->
+                    <div class="test-card" data-subject="matematika">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-matematika);"></span>
+                                <span class="test-card__subject-name">Matematika</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--hard">Qiyin</span>
+                        </div>
+                        <h3 class="test-card__title">Trigonometriya</h3>
+                        <p class="test-card__description">Sinus, kosinus va tangens</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                30 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                20 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.9
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Trigonometriya testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="tarix">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-tarix);"></span>
+                                <span class="test-card__subject-name">Tarix</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--easy">Oson</span>
+                        </div>
+                        <h3 class="test-card__title">Temuriylar davri</h3>
+                        <p class="test-card__description">Amir Temur va temuriylar saltanati</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                15 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                10 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.6
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Temuriylar davri testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="test-card" data-subject="ingliz">
+                        <div class="test-card__header">
+                            <div class="test-card__subject">
+                                <span class="test-card__subject-dot" style="background: var(--color-ingliz);"></span>
+                                <span class="test-card__subject-name">Ingliz tili</span>
+                            </div>
+                            <span class="test-card__difficulty test-card__difficulty--hard">Qiyin</span>
+                        </div>
+                        <h3 class="test-card__title">Reading Comprehension</h3>
+                        <p class="test-card__description">Matn o'qish va tushunish</p>
+                        <div class="test-card__meta">
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                30 daqiqa
+                            </span>
+                            <span class="test-card__meta-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                20 savol
+                            </span>
+                            <span class="test-card__meta-item test-card__meta-item--rating">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 1L10 5.5L15 6.5L11.5 10L12.5 15L8 12.5L3.5 15L4.5 10L1 6.5L6 5.5L8 1Z" fill="currentColor" stroke="currentColor" stroke-width="1" />
+                                </svg>
+                                4.9
+                            </span>
+                        </div>
+                        <button class="test-card__button" aria-label="Reading Comprehension testini boshlash">
+                            <span>Testni boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- YUKLASH: Ko'proq testlar -->
+        <!-- ============================================ -->
+        <section class="tests-loadmore" aria-label="Ko'proq testlar">
+            <div class="container">
+                <button class="tests-loadmore__button" aria-label="Ko'proq testlarni yuklash">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span>Ko'proq testlarni yuklash</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- STATISTIKA: Test natijalari -->
+        <!-- ============================================ -->
+        <section class="tests-stats" aria-label="Test statistikasi">
+            <div class="container">
+                <div class="tests-stats__grid">
+                    <div class="tests-stats-item">
+                        <span class="tests-stats-item__number" data-count="320" data-duration="2000">0</span>
+                        <span class="tests-stats-item__label">Jami testlar</span>
+                    </div>
+                    <div class="tests-stats-item">
+                        <span class="tests-stats-item__number" data-count="2800" data-duration="2000">0</span>
+                        <span class="tests-stats-item__label">Jami savollar</span>
+                    </div>
+                    <div class="tests-stats-item">
+                        <span class="tests-stats-item__number" data-count="15000" data-duration="2000">0</span>
+                        <span class="tests-stats-item__label">Yechilgan testlar</span>
+                    </div>
+                    <div class="tests-stats-item">
+                        <span class="tests-stats-item__number" data-count="92" data-duration="2000">0</span>
+                        <span class="tests-stats-item__suffix">%</span>
+                        <span class="tests-stats-item__label">O'rtacha natija</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Bosh sahifadagi footer bilan bir xil -->
+    <!-- ============================================ -->
+    <footer class="footer" role="contentinfo" aria-label="Sayt pastki qismi">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                        </svg>
+                        <span>GrantWay</span>
+                    </a>
+                    <p class="footer__description">Grant sari ishonchli yo'l</p>
+                </div>
+                
+                <nav class="footer__nav" aria-label="Footer menyusi">
+                    <ul class="footer__nav-list">
+                        <li><a href="../index.html">Bosh sahifa</a></li>
+                        <li><a href="./testlar.html">Testlar</a></li>
+                        <li><a href="./yangiliklar.html">Yangiliklar</a></li>
+                        <li><a href="./aloqa.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__social">
+                    <span class="footer__social-label">Biz bilan bog'laning</span>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Telegram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M22 2L2 11L10 14L13 22L16 16L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M16 16L20 20M16 16L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M10 9L15 12L10 15V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 GrantWay. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================ -->
+    <script src="../script.js" defer></script>
+    <script src="../pages/pages.js" defer></script>
+</body>
+</html>

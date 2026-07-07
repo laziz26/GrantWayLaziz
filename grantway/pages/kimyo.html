@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <!-- Meta ma'lumotlar -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GrantWay - Kimyo faniga mukammal tayyorlaning. Organik va noorganik kimyo, elementlar, reaksiyalar va DTM maslahatlari." />
+    <meta name="theme-color" content="#0a0e27" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    
+    <!-- Fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    
+    <title>GrantWay - Kimyo | Grant sari ishonchli yo'l</title>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HEADER: Bosh sahifadagi header bilan bir xil -->
+    <!-- ============================================ -->
+    <header class="header" role="banner" aria-label="Sayt sarlavhasi">
+        <div class="header__background" aria-hidden="true"></div>
+        <div class="header__overlay" aria-hidden="true"></div>
+        
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="../index.html" class="header__logo" aria-label="GrantWay bosh sahifa">
+                <svg class="header__logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                    <path d="M20 8L21.8 15.6L29.6 17.4L23.4 22.6L25.2 30.2L20 26.6L14.8 30.2L16.6 22.6L10.4 17.4L18.2 15.6L20 8Z" fill="white" opacity="0.3" />
+                </svg>
+                <span class="header__logo-text">GrantWay</span>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="header__nav" role="navigation" aria-label="Asosiy menyu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="../index.html" class="header__nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../index.html#fanlar" class="header__nav-link header__nav-link--active">Fanlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../testlar.html" class="header__nav-link">Testlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../yangiliklar.html" class="header__nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="../aloqa.html" class="header__nav-link">Aloqa</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Burger Menu -->
+            <button class="header__burger" aria-label="Menyuni ochish/yopish" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="header__mobile" id="mobile-menu" role="navigation" aria-label="Mobil menyu" hidden>
+            <ul class="header__mobile-list">
+                <li class="header__mobile-item">
+                    <a href="../index.html" class="header__mobile-link">Bosh sahifa</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../index.html#fanlar" class="header__mobile-link header__mobile-link--active">Fanlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../testlar.html" class="header__mobile-link">Testlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../yangiliklar.html" class="header__mobile-link">Yangiliklar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="../aloqa.html" class="header__mobile-link">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN: Kimyo sahifasi kontenti -->
+    <!-- ============================================ -->
+    <main class="main" role="main">
+        <!-- ============================================ -->
+        <!-- HERO: Kimyo faniga mukammal tayyorlaning -->
+        <!-- ============================================ -->
+        <section class="chemistry-hero" aria-label="Kimyo banneri">
+            <div class="chemistry-hero__background" aria-hidden="true">
+                <!-- Kimyoviy elementlar va molekulalar fonida -->
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--1">⚛</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--2">🧪</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--3">⚗</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--4">🔬</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--5">🧫</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--6">H₂O</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--7">CO₂</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--8">NaCl</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--9">C₆H₁₂O₆</span>
+                <span class="chemistry-hero__symbol chemistry-hero__symbol--10">CH₄</span>
+            </div>
+            
+            <div class="container chemistry-hero__container">
+                <div class="chemistry-hero__content">
+                    <div class="chemistry-hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <ellipse cx="8" cy="10" rx="5" ry="3" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M3 10L5 5H11L13 10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <circle cx="7" cy="7" r="0.8" fill="currentColor" />
+                            <circle cx="9" cy="7" r="0.8" fill="currentColor" />
+                        </svg>
+                        <span>2026 DTM</span>
+                    </div>
+                    
+                    <h1 class="chemistry-hero__title">
+                        Kimyo faniga <br />
+                        <span class="chemistry-hero__title-highlight">mukammal tayyorlaning</span>
+                    </h1>
+                    
+                    <p class="chemistry-hero__description">
+                        Elementlar dunyosini kashf eting, kimyoviy reaksiyalarni tushuning va grant sari ishonchli qadam tashlang.
+                    </p>
+                    
+                    <div class="chemistry-hero__actions">
+                        <a href="#topics" class="chemistry-hero__cta cta-button">
+                            <span class="cta-button__text">Mavzularni boshlash</span>
+                            <span class="cta-button__ripple" aria-hidden="true"></span>
+                        </a>
+                        <a href="#statistics" class="chemistry-hero__scroll" aria-label="Pastga scroll">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- STATISTIKA: Animated Counter -->
+        <!-- ============================================ -->
+        <section class="chemistry-statistics" id="statistics" aria-label="Kimyo statistikasi">
+            <div class="container">
+                <div class="chemistry-statistics__grid">
+                    <div class="chemistry-statistic-item">
+                        <span class="chemistry-statistic-item__number" data-count="100" data-duration="2000">0</span>
+                        <span class="chemistry-statistic-item__suffix">+</span>
+                        <span class="chemistry-statistic-item__label">Mavzu</span>
+                    </div>
+                    <div class="chemistry-statistic-item">
+                        <span class="chemistry-statistic-item__number" data-count="750" data-duration="2000">0</span>
+                        <span class="chemistry-statistic-item__suffix">+</span>
+                        <span class="chemistry-statistic-item__label">Savol</span>
+                    </div>
+                    <div class="chemistry-statistic-item">
+                        <span class="chemistry-statistic-item__number" data-count="85" data-duration="2000">0</span>
+                        <span class="chemistry-statistic-item__suffix">+</span>
+                        <span class="chemistry-statistic-item__label">Test</span>
+                    </div>
+                    <div class="chemistry-statistic-item">
+                        <span class="chemistry-statistic-item__number" data-count="91" data-duration="2000">0</span>
+                        <span class="chemistry-statistic-item__suffix">%</span>
+                        <span class="chemistry-statistic-item__label">Muvaffaqiyat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- MAVZULAR: Kimyo mavzulari -->
+        <!-- ============================================ -->
+        <section class="chemistry-topics" id="topics" aria-label="Kimyo mavzulari">
+            <div class="container">
+                <div class="chemistry-topics__header">
+                    <h2 class="chemistry-topics__title">Mavzular</h2>
+                    <p class="chemistry-topics__subtitle">Kimyoni bosqichma-bosqich o'rganing</p>
+                </div>
+                
+                <div class="chemistry-topics__grid">
+                    <!-- Atom tuzilishi -->
+                    <article class="chemistry-topic-card" data-topic="atomic-structure">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="20" cy="20" r="4" fill="currentColor" />
+                                <circle cx="14" cy="14" r="2" stroke="currentColor" stroke-width="2" />
+                                <circle cx="26" cy="26" r="2" stroke="currentColor" stroke-width="2" />
+                                <circle cx="14" cy="26" r="2" stroke="currentColor" stroke-width="2" />
+                                <circle cx="26" cy="14" r="2" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Atom tuzilishi</h3>
+                        <p class="chemistry-topic-card__description">Atom, proton, neytron, elektron</p>
+                        <button class="chemistry-topic-card__button" aria-label="Atom tuzilishi mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Davriy sistema -->
+                    <article class="chemistry-topic-card" data-topic="periodic-table">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="6" y="8" width="28" height="24" rx="2" stroke="currentColor" stroke-width="2.5" />
+                                <rect x="10" y="12" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                                <rect x="18" y="12" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                                <rect x="26" y="12" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                                <rect x="10" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                                <rect x="18" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                                <rect x="26" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Davriy sistema</h3>
+                        <p class="chemistry-topic-card__description">Elementlar davriy sistemasi</p>
+                        <button class="chemistry-topic-card__button" aria-label="Davriy sistema mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Kimyoviy bog'lanishlar -->
+                    <article class="chemistry-topic-card" data-topic="chemical-bonds">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M12 20L28 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                <circle cx="12" cy="20" r="4" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="28" cy="20" r="4" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M8 16L6 14M32 16L34 14M8 24L6 26M32 24L34 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Kimyoviy bog'lanishlar</h3>
+                        <p class="chemistry-topic-card__description">Ion, kovalent, metall bog'lanishlar</p>
+                        <button class="chemistry-topic-card__button" aria-label="Kimyoviy bog'lanishlar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Kimyoviy reaksiyalar -->
+                    <article class="chemistry-topic-card" data-topic="chemical-reactions">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M10 20L16 14L20 18L30 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 30L16 24L24 32L34 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="10" cy="20" r="3" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="30" cy="8" r="3" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="34" cy="22" r="3" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Kimyoviy reaksiyalar</h3>
+                        <p class="chemistry-topic-card__description">Reaksiya turlari va tenglamalari</p>
+                        <button class="chemistry-topic-card__button" aria-label="Kimyoviy reaksiyalar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Organik kimyo -->
+                    <article class="chemistry-topic-card" data-topic="organic-chemistry">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 10L24 16L20 22L16 16L20 10Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                <path d="M24 16L28 22L24 28L20 22" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                <path d="M16 16L12 22L16 28L20 22" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                <path d="M24 28L20 34L16 28" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Organik kimyo</h3>
+                        <p class="chemistry-topic-card__description">Uglevodorodlar va ularning hosilalari</p>
+                        <button class="chemistry-topic-card__button" aria-label="Organik kimyo mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Norganik kimyo -->
+                    <article class="chemistry-topic-card" data-topic="inorganic-chemistry">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="8" y="12" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M8 28L16 36H24L32 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="16" cy="20" r="2" fill="currentColor" />
+                                <circle cx="24" cy="20" r="2" fill="currentColor" />
+                                <text x="6" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">Fe</text>
+                                <text x="22" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">Cu</text>
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Norganik kimyo</h3>
+                        <p class="chemistry-topic-card__description">Metallar, metallmaslar va ularning birikmalari</p>
+                        <button class="chemistry-topic-card__button" aria-label="Norganik kimyo mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Eritmalar -->
+                    <article class="chemistry-topic-card" data-topic="solutions">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="8" y="14" width="24" height="16" rx="8" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="14" cy="22" r="3" stroke="currentColor" stroke-width="2" />
+                                <circle cx="20" cy="22" r="2" stroke="currentColor" stroke-width="2" />
+                                <circle cx="26" cy="22" r="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 30L14 28M20 30L18 28M26 30L24 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Eritmalar</h3>
+                        <p class="chemistry-topic-card__description">Eritmalar, konsentratsiya va eruvchanlik</p>
+                        <button class="chemistry-topic-card__button" aria-label="Eritmalar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+
+                    <!-- Kimyoviy hisob-kitoblar -->
+                    <article class="chemistry-topic-card" data-topic="stoichiometry">
+                        <div class="chemistry-topic-card__icon-wrapper">
+                            <svg class="chemistry-topic-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5" />
+                                <path d="M20 8V20L26 26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <text x="6" y="6" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">mol</text>
+                                <text x="28" y="32" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">g</text>
+                            </svg>
+                        </div>
+                        <h3 class="chemistry-topic-card__title">Kimyoviy hisob-kitoblar</h3>
+                        <p class="chemistry-topic-card__description">Mol, massa, hajm va konsentratsiya</p>
+                        <button class="chemistry-topic-card__button" aria-label="Kimyoviy hisob-kitoblar mavzusini boshlash">
+                            <span>Boshlash</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- MUHIM FORMULALAR: Kimyoviy formulalar -->
+        <!-- ============================================ -->
+        <section class="chemistry-formulas" id="formulas" aria-label="Muhim kimyoviy formulalar">
+            <div class="container">
+                <div class="chemistry-formulas__header">
+                    <h2 class="chemistry-formulas__title">Muhim kimyoviy formulalar</h2>
+                    <p class="chemistry-formulas__subtitle">Tez-tez uchraydigan formulalar va ularning izohlari</p>
+                </div>
+                
+                <div class="chemistry-formulas__grid">
+                    <!-- Formula 1 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">⚛</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Suv</h3>
+                            <span class="chemistry-formula-card__formula">H₂O</span>
+                            <p class="chemistry-formula-card__description">Vodorod va kisloroddan tashkil topgan birikma</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="H₂O">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formula 2 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">⚗</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Osh tuzi</h3>
+                            <span class="chemistry-formula-card__formula">NaCl</span>
+                            <p class="chemistry-formula-card__description">Natriy xlorid - muhim oziq-ovqat mahsuloti</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="NaCl">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formula 3 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">🧪</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Karbonat angidrid</h3>
+                            <span class="chemistry-formula-card__formula">CO₂</span>
+                            <p class="chemistry-formula-card__description">Uglerod oksidi - issiqxona gazi</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="CO₂">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formula 4 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">⚛</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Glyukoza</h3>
+                            <span class="chemistry-formula-card__formula">C₆H₁₂O₆</span>
+                            <p class="chemistry-formula-card__description">Oddiy shakar - energiya manbai</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="C₆H₁₂O₆">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formula 5 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">🧫</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Metan</h3>
+                            <span class="chemistry-formula-card__formula">CH₄</span>
+                            <p class="chemistry-formula-card__description">Eng oddiy uglevodorod - tabiiy gaz</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="CH₄">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Formula 6 -->
+                    <div class="chemistry-formula-card">
+                        <div class="chemistry-formula-card__icon" aria-hidden="true">🔬</div>
+                        <div class="chemistry-formula-card__content">
+                            <h3 class="chemistry-formula-card__title">Sulfat kislota</h3>
+                            <span class="chemistry-formula-card__formula">H₂SO₄</span>
+                            <p class="chemistry-formula-card__description">Muhim sanoat kislotasi</p>
+                            <button class="chemistry-formula-card__copy" aria-label="Formulani nusxalash" data-formula="H₂SO₄">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="7" y="7" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 13V5C5 3.89543 5.89543 3 7 3H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- BILASIZMI: Kimyo faktlari -->
+        <!-- ============================================ -->
+        <section class="chemistry-facts" aria-label="Kimyo haqida qiziqarli faktlar">
+            <div class="container">
+                <div class="chemistry-facts__header">
+                    <h2 class="chemistry-facts__title">Bilasizmi?</h2>
+                    <p class="chemistry-facts__subtitle">Kimyo olamidan qiziqarli ma'lumotlar</p>
+                </div>
+                
+                <div class="chemistry-facts__accordion">
+                    <!-- Fakt 1 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-1">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">1-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-1" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Suv (H₂O) yerdagi eng ko'p tarqalgan birikma bo'lib, u yer yuzasining 71% ini qoplaydi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 2 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-2">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">2-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-2" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Abu Ali ibn Sino 1000 dan ortiq dori vositalarining kimyoviy tarkibini o'rgangan va tibbiyotga katta hissa qo'shgan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 3 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-3">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">3-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-3" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Oltin (Au) dunyodagi eng og'ir metallardan biri bo'lib, uning 1 kub sm hajmi 19.3 grammni tashkil qiladi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 4 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-4">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">4-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-4" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Ozon (O₃) kislorodning allotrofik shakli bo'lib, u atmosferada quyoshning zararli nurlaridan himoya qiladi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 5 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-5">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">5-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-5" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Platina (Pt) dunyodagi eng qimmatbaho metallardan biri bo'lib, u katalizator sifatida keng qo'llaniladi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 6 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-6">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">6-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-6" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Vodorod (H) koinotdagi eng ko'p tarqalgan element bo'lib, u quyosh va yulduzlarning asosiy tarkibiy qismidir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 7 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-7">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">7-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-7" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Al-Beruniy 11-asrda turli metallarning zichligini o'lchagan va ularning xossalarini o'rgangan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 8 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-8">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">8-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-8" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Kremniy (Si) elektronika sanoatida eng muhim yarimo'tkazgich material hisoblanadi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 9 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-9">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">9-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-9" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>O'zbekiston kimyo sanoati 100 dan ortiq turdagi mahsulot ishlab chiqaradi, jumladan, mineral o'g'itlar va kimyoviy moddalar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fakt 10 -->
+                    <div class="chemistry-fact-item" role="listitem">
+                        <button class="chemistry-fact-item__trigger" aria-expanded="false" aria-controls="chemistry-fact-10">
+                            <span class="chemistry-fact-item__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="chemistry-fact-item__title">10-fakt</span>
+                            <span class="chemistry-fact-item__arrow" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="chemistry-fact-item__content" id="chemistry-fact-10" role="region">
+                            <div class="chemistry-fact-item__body">
+                                <p>Fotosintez jarayonida o'simliklar karbonat angidrid (CO₂) va suvni (H₂O) glyukoza (C₆H₁₂O₆) va kislorodga (O₂) aylantiradi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- DTM MASLAHATLARI: Timeline -->
+        <!-- ============================================ -->
+        <section class="chemistry-tips" aria-label="DTM maslahatlari">
+            <div class="container">
+                <div class="chemistry-tips__header">
+                    <h2 class="chemistry-tips__title">DTM maslahatlari</h2>
+                    <p class="chemistry-tips__subtitle">Kimyo fanidan yuqori ball olish uchun tavsiyalar</p>
+                </div>
+                
+                <div class="chemistry-tips__timeline">
+                    <!-- Maslahat 1 -->
+                    <div class="chemistry-tip-item">
+                        <div class="chemistry-tip-item__number" aria-hidden="true">1</div>
+                        <div class="chemistry-tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="chemistry-tip-item__content">
+                            <h3 class="chemistry-tip-item__title">Davriy sistemani yodlang</h3>
+                            <p class="chemistry-tip-item__description">Elementlarning joylashuvi va xossalarini eslab qoling. Bu ko'p masalalarda yordam beradi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 2 -->
+                    <div class="chemistry-tip-item">
+                        <div class="chemistry-tip-item__number" aria-hidden="true">2</div>
+                        <div class="chemistry-tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="chemistry-tip-item__content">
+                            <h3 class="chemistry-tip-item__title">Reaksiya tenglamalarini mashq qiling</h3>
+                            <p class="chemistry-tip-item__description">Har xil reaksiya tenglamalarini yozib, ularni muvozanatlashtirishni o'rganing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 3 -->
+                    <div class="chemistry-tip-item">
+                        <div class="chemistry-tip-item__number" aria-hidden="true">3</div>
+                        <div class="chemistry-tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="chemistry-tip-item__content">
+                            <h3 class="chemistry-tip-item__title">Mol hisob-kitoblarini o'rganing</h3>
+                            <p class="chemistry-tip-item__description">Mol, massa va hajm o'rtasidagi bog'lanishni tushuning va ko'p mashq qiling.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 4 -->
+                    <div class="chemistry-tip-item">
+                        <div class="chemistry-tip-item__number" aria-hidden="true">4</div>
+                        <div class="chemistry-tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="chemistry-tip-item__content">
+                            <h3 class="chemistry-tip-item__title">Laboratoriya ishlarini tushuning</h3>
+                            <p class="chemistry-tip-item__description">Amaliy tajribalar va ularning natijalari test savollarida ko'p uchraydi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Maslahat 5 -->
+                    <div class="chemistry-tip-item">
+                        <div class="chemistry-tip-item__number" aria-hidden="true">5</div>
+                        <div class="chemistry-tip-item__icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="chemistry-tip-item__content">
+                            <h3 class="chemistry-tip-item__title">Organik kimyo asoslarini o'rganing</h3>
+                            <p class="chemistry-tip-item__description">Uglevodorodlar va funktsional guruhlar haqida bilimga ega bo'ling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- VIDEO DARSLAR: Placeholder -->
+        <!-- ============================================ -->
+        <section class="chemistry-videos" aria-label="Video darslar">
+            <div class="container">
+                <div class="chemistry-videos__header">
+                    <h2 class="chemistry-videos__title">Video darslar</h2>
+                    <p class="chemistry-videos__subtitle">Tez orada qo'shiladi</p>
+                </div>
+                
+                <div class="chemistry-videos__grid">
+                    <!-- Video 1 -->
+                    <div class="chemistry-video-card">
+                        <div class="chemistry-video-card__thumbnail">
+                            <div class="chemistry-video-card__placeholder">
+                                <span class="chemistry-video-card__duration">17:20</span>
+                            </div>
+                            <button class="chemistry-video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chemistry-video-card__content">
+                            <h3 class="chemistry-video-card__title">Atom va molekula tuzilishi</h3>
+                            <p class="chemistry-video-card__description">Boshlang'ich daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="chemistry-video-card">
+                        <div class="chemistry-video-card__thumbnail">
+                            <div class="chemistry-video-card__placeholder">
+                                <span class="chemistry-video-card__duration">21:30</span>
+                            </div>
+                            <button class="chemistry-video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chemistry-video-card__content">
+                            <h3 class="chemistry-video-card__title">Kimyoviy reaksiya turlari</h3>
+                            <p class="chemistry-video-card__description">O'rta daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="chemistry-video-card">
+                        <div class="chemistry-video-card__thumbnail">
+                            <div class="chemistry-video-card__placeholder">
+                                <span class="chemistry-video-card__duration">23:15</span>
+                            </div>
+                            <button class="chemistry-video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chemistry-video-card__content">
+                            <h3 class="chemistry-video-card__title">Organik birikmalar</h3>
+                            <p class="chemistry-video-card__description">Yuqori daraja</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="chemistry-video-card">
+                        <div class="chemistry-video-card__thumbnail">
+                            <div class="chemistry-video-card__placeholder">
+                                <span class="chemistry-video-card__duration">19:40</span>
+                            </div>
+                            <button class="chemistry-video-card__play" aria-label="Videoni ko'rish">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2" />
+                                    <path d="M20 14L34 24L20 34V14Z" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chemistry-video-card__content">
+                            <h3 class="chemistry-video-card__title">Eritmalar va konsentratsiya</h3>
+                            <p class="chemistry-video-card__description">Yuqori daraja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- AMALIY TEST: CTA Section -->
+        <!-- ============================================ -->
+        <section class="chemistry-test-cta" aria-label="Amaliy test">
+            <div class="container">
+                <div class="chemistry-test-cta__content">
+                    <div class="chemistry-test-cta__icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="8" stroke="currentColor" stroke-width="2.5" />
+                            <path d="M20 28L28 36L44 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <text x="8" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">✓</text>
+                        </svg>
+                    </div>
+                    <h2 class="chemistry-test-cta__title">Bilimingizni sinab ko'ring</h2>
+                    <p class="chemistry-test-cta__description">
+                        Kimyo fanidan amaliy test topshiring va natijangizni bilib oling.
+                    </p>
+                    <a href="../testlar.html" class="chemistry-test-cta__button cta-button cta-button--large">
+                        <span class="cta-button__text">Testni boshlash</span>
+                        <span class="cta-button__ripple" aria-hidden="true"></span>
+                        <span class="cta-button__glow" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Bosh sahifadagi footer bilan bir xil -->
+    <!-- ============================================ -->
+    <footer class="footer" role="contentinfo" aria-label="Sayt pastki qismi">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                        </svg>
+                        <span>GrantWay</span>
+                    </a>
+                    <p class="footer__description">Grant sari ishonchli yo'l</p>
+                </div>
+                
+                <nav class="footer__nav" aria-label="Footer menyusi">
+                    <ul class="footer__nav-list">
+                        <li><a href="../index.html">Bosh sahifa</a></li>
+                        <li><a href="../testlar.html">Testlar</a></li>
+                        <li><a href="../yangiliklar.html">Yangiliklar</a></li>
+                        <li><a href="../aloqa.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__social">
+                    <span class="footer__social-label">Biz bilan bog'laning</span>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Telegram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M22 2L2 11L10 14L13 22L16 16L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M16 16L20 20M16 16L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M10 9L15 12L10 15V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 GrantWay. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================ -->
+    <script src="../script.js" defer></script>
+    <script src="../pages/pages.js" defer></script>
+</body>
+</html>
