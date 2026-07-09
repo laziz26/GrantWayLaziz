@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <!-- Meta ma'lumotlar -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GrantWay - Barcha fanlar. Matematika, Tarix, Ona tili, Kimyo va Ingliz tili fanlarini o'rganing." />
+    <meta name="theme-color" content="#0a0e27" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    
+    <!-- Fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../pages/pages.css" />
+    
+    <title>GrantWay - Fanlar | Grant sari ishonchli yo'l</title>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HEADER: Transparent, Sticky, Blur -->
+    <!-- ============================================ -->
+    <header class="header" role="banner" aria-label="Sayt sarlavhasi">
+        <div class="header__background" aria-hidden="true"></div>
+        <div class="header__overlay" aria-hidden="true"></div>
+        
+        <div class="container header__container">
+            <!-- Logo -->
+            <a href="../index.html" class="header__logo" aria-label="GrantWay bosh sahifa">
+                <svg class="header__logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                    <path d="M20 8L21.8 15.6L29.6 17.4L23.4 22.6L25.2 30.2L20 26.6L14.8 30.2L16.6 22.6L10.4 17.4L18.2 15.6L20 8Z" fill="white" opacity="0.3" />
+                </svg>
+                <span class="header__logo-text">GrantWay</span>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="header__nav" role="navigation" aria-label="Asosiy menyu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="../index.html" class="header__nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./fanlar.html" class="header__nav-link header__nav-link--active">Fanlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./testlar.html" class="header__nav-link">Testlar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./yangiliklar.html" class="header__nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="./aloqa.html" class="header__nav-link">Aloqa</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Burger Menu -->
+            <button class="header__burger" aria-label="Menyuni ochish/yopish" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="header__mobile" id="mobile-menu" role="navigation" aria-label="Mobil menyu" hidden>
+            <ul class="header__mobile-list">
+                <li class="header__mobile-item">
+                    <a href="../index.html" class="header__mobile-link">Bosh sahifa</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./fanlar.html" class="header__mobile-link header__mobile-link--active">Fanlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./testlar.html" class="header__mobile-link">Testlar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./yangiliklar.html" class="header__mobile-link">Yangiliklar</a>
+                </li>
+                <li class="header__mobile-item">
+                    <a href="./aloqa.html" class="header__mobile-link">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN: Fanlar sahifasi kontenti -->
+    <!-- ============================================ -->
+    <main class="main" role="main">
+        <!-- ============================================ -->
+        <!-- HERO: Fanlar sahifasi banneri -->
+        <!-- ============================================ -->
+        <section class="fanlar-hero" aria-label="Fanlar banneri">
+            <div class="fanlar-hero__background" aria-hidden="true">
+                <span class="fanlar-hero__icon fanlar-hero__icon--1">📚</span>
+                <span class="fanlar-hero__icon fanlar-hero__icon--2">🎯</span>
+                <span class="fanlar-hero__icon fanlar-hero__icon--3">📖</span>
+                <span class="fanlar-hero__icon fanlar-hero__icon--4">⚡</span>
+                <span class="fanlar-hero__icon fanlar-hero__icon--5">🌟</span>
+                <span class="fanlar-hero__icon fanlar-hero__icon--6">🏆</span>
+            </div>
+            
+            <div class="container fanlar-hero__container">
+                <div class="fanlar-hero__content">
+                    <div class="fanlar-hero__badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M2 4L8 8L14 4M2 4V12M2 4C2 2.89543 2.89543 2 4 2H12C13.1046 2 14 2.89543 14 4M14 4V12M14 12C14 13.1046 13.1046 14 12 14H4C2.89543 14 2 13.1046 2 12M8 8L14 4M8 8L2 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>5 ta fan</span>
+                    </div>
+                    
+                    <h1 class="fanlar-hero__title">
+                        GrantWay <br />
+                        <span class="fanlar-hero__title-highlight">fanlari</span>
+                    </h1>
+                    
+                    <p class="fanlar-hero__description">
+                        Matematika, Tarix, Ona tili, Kimyo va Ingliz tili fanlarini chuqur o‘rganing va grant sari ishonchli qadam tashlang.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- FANLAR: 5 ta fan kartalari -->
+        <!-- ============================================ -->
+        <section class="subjects" id="fanlar" aria-label="Fanlar bo'limi">
+            <div class="container">
+                <div class="subjects__header">
+                    <h2 class="subjects__title">Barcha fanlar</h2>
+                    <p class="subjects__subtitle">O'zingizga mos fanlarni tanlang va bilimingizni sinab ko'ring</p>
+                </div>
+                
+                <div class="subjects__grid">
+                    <!-- Matematika -->
+                    <article class="subject-card subject-card--matematika" data-subject="matematika">
+                        <div class="subject-card__background" aria-hidden="true"></div>
+                        <div class="subject-card__content">
+                            <div class="subject-card__icon-wrapper">
+                                <svg class="subject-card__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M4 36L16 12L20 20L28 8L32 16L44 4" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 40L20 28L28 40L36 28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="16" cy="12" r="2" fill="currentColor" />
+                                    <circle cx="28" cy="8" r="2" fill="currentColor" />
+                                    <circle cx="44" cy="4" r="2" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 class="subject-card__title">Matematika</h3>
+                            <p class="subject-card__description">Algebra, geometriya va trigonometriya</p>
+                            <a href="./matematika.html" class="subject-card__link" aria-label="Matematika faniga o'tish">
+                                <span>Batafsil</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="subject-card__float subject-card__float--1" aria-hidden="true">π</div>
+                        <div class="subject-card__float subject-card__float--2" aria-hidden="true">Σ</div>
+                        <div class="subject-card__float subject-card__float--3" aria-hidden="true">√</div>
+                        <div class="subject-card__float subject-card__float--4" aria-hidden="true">+</div>
+                        <div class="subject-card__float subject-card__float--5" aria-hidden="true">÷</div>
+                    </article>
+
+                    <!-- Tarix -->
+                    <article class="subject-card subject-card--tarix" data-subject="tarix">
+                        <div class="subject-card__background" aria-hidden="true"></div>
+                        <div class="subject-card__content">
+                            <div class="subject-card__icon-wrapper">
+                                <svg class="subject-card__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 8H40V40H8V8Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+                                    <path d="M16 8V4M32 8V4M8 16H40M8 24H24M8 32H18" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="34" cy="34" r="4" stroke="currentColor" stroke-width="3" />
+                                    <path d="M37 37L42 42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3 class="subject-card__title">Tarix</h3>
+                            <p class="subject-card__description">O'zbekiston va jahon tarixi</p>
+                            <a href="./tarix.html" class="subject-card__link" aria-label="Tarix faniga o'tish">
+                                <span>Batafsil</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="subject-card__float subject-card__float--1" aria-hidden="true">⚔</div>
+                        <div class="subject-card__float subject-card__float--2" aria-hidden="true">🏛</div>
+                        <div class="subject-card__float subject-card__float--3" aria-hidden="true">🗺</div>
+                        <div class="subject-card__float subject-card__float--4" aria-hidden="true">👑</div>
+                        <div class="subject-card__float subject-card__float--5" aria-hidden="true">📜</div>
+                    </article>
+
+                    <!-- Ona tili -->
+                    <article class="subject-card subject-card--ona-tili" data-subject="ona-tili">
+                        <div class="subject-card__background" aria-hidden="true"></div>
+                        <div class="subject-card__content">
+                            <div class="subject-card__icon-wrapper">
+                                <svg class="subject-card__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8 12H40M8 20H32M8 28H40M8 36H24" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                    <circle cx="36" cy="36" r="6" stroke="currentColor" stroke-width="3" />
+                                    <path d="M33 33L39 39M39 33L33 39" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3 class="subject-card__title">Ona tili</h3>
+                            <p class="subject-card__description">O'zbek tili grammatikasi va adabiyoti</p>
+                            <a href="./ona-tili.html" class="subject-card__link" aria-label="Ona tili faniga o'tish">
+                                <span>Batafsil</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="subject-card__float subject-card__float--1" aria-hidden="true">📖</div>
+                        <div class="subject-card__float subject-card__float--2" aria-hidden="true">✍</div>
+                        <div class="subject-card__float subject-card__float--3" aria-hidden="true">📝</div>
+                        <div class="subject-card__float subject-card__float--4" aria-hidden="true">🔤</div>
+                        <div class="subject-card__float subject-card__float--5" aria-hidden="true">📚</div>
+                    </article>
+
+                    <!-- Kimyo -->
+                    <article class="subject-card subject-card--kimyo" data-subject="kimyo">
+                        <div class="subject-card__background" aria-hidden="true"></div>
+                        <div class="subject-card__content">
+                            <div class="subject-card__icon-wrapper">
+                                <svg class="subject-card__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <ellipse cx="24" cy="34" rx="16" ry="10" stroke="currentColor" stroke-width="3" />
+                                    <path d="M8 34L16 14H32L40 34" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+                                    <circle cx="20" cy="24" r="2" fill="currentColor" />
+                                    <circle cx="28" cy="24" r="2" fill="currentColor" />
+                                    <path d="M24 14V10M24 10L20 6M24 10L28 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="subject-card__title">Kimyo</h3>
+                            <p class="subject-card__description">Organik va noorganik kimyo</p>
+                            <a href="./kimyo.html" class="subject-card__link" aria-label="Kimyo faniga o'tish">
+                                <span>Batafsil</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="subject-card__float subject-card__float--1" aria-hidden="true">⚗</div>
+                        <div class="subject-card__float subject-card__float--2" aria-hidden="true">🧪</div>
+                        <div class="subject-card__float subject-card__float--3" aria-hidden="true">⚛</div>
+                        <div class="subject-card__float subject-card__float--4" aria-hidden="true">🔬</div>
+                        <div class="subject-card__float subject-card__float--5" aria-hidden="true">🧫</div>
+                    </article>
+
+                    <!-- Ingliz tili -->
+                    <article class="subject-card subject-card--ingliz" data-subject="ingliz">
+                        <div class="subject-card__background" aria-hidden="true"></div>
+                        <div class="subject-card__content">
+                            <div class="subject-card__icon-wrapper">
+                                <svg class="subject-card__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="3" />
+                                    <path d="M6 18H42M6 24H42M6 30H42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                    <path d="M18 10V38M30 10V38" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3 class="subject-card__title">Ingliz tili</h3>
+                            <p class="subject-card__description">Grammar, vocabulary va reading</p>
+                            <a href="./ingliz.html" class="subject-card__link" aria-label="Ingliz tili faniga o'tish">
+                                <span>Batafsil</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="subject-card__float subject-card__float--1" aria-hidden="true">ABC</div>
+                        <div class="subject-card__float subject-card__float--2" aria-hidden="true">📘</div>
+                        <div class="subject-card__float subject-card__float--3" aria-hidden="true">🇬🇧</div>
+                        <div class="subject-card__float subject-card__float--4" aria-hidden="true">📝</div>
+                        <div class="subject-card__float subject-card__float--5" aria-hidden="true">🗣</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- STATISTIKA: Qisqacha fan statistikasi -->
+        <!-- ============================================ -->
+        <section class="fanlar-statistics" aria-label="Fanlar statistikasi">
+            <div class="container">
+                <div class="fanlar-statistics__grid">
+                    <div class="fanlar-statistic-item">
+                        <span class="fanlar-statistic-item__number" data-count="5" data-duration="1500">0</span>
+                        <span class="fanlar-statistic-item__label">Fanlar</span>
+                    </div>
+                    <div class="fanlar-statistic-item">
+                        <span class="fanlar-statistic-item__number" data-count="50" data-duration="1500">0</span>
+                        <span class="fanlar-statistic-item__suffix">+</span>
+                        <span class="fanlar-statistic-item__label">Mavzular</span>
+                    </div>
+                    <div class="fanlar-statistic-item">
+                        <span class="fanlar-statistic-item__number" data-count="2800" data-duration="1500">0</span>
+                        <span class="fanlar-statistic-item__suffix">+</span>
+                        <span class="fanlar-statistic-item__label">Savollar</span>
+                    </div>
+                    <div class="fanlar-statistic-item">
+                        <span class="fanlar-statistic-item__number" data-count="320" data-duration="1500">0</span>
+                        <span class="fanlar-statistic-item__suffix">+</span>
+                        <span class="fanlar-statistic-item__label">Testlar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CTA: Fanlarni o'rganish -->
+        <!-- ============================================ -->
+        <section class="fanlar-cta" aria-label="Fanlarni o'rganishga chaqiruv">
+            <div class="container">
+                <div class="fanlar-cta__content">
+                    <div class="fanlar-cta__icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="8" stroke="currentColor" stroke-width="2.5" />
+                            <path d="M20 28L28 36L44 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <text x="8" y="12" font-family="JetBrains Mono" font-size="8" font-weight="700" fill="currentColor">📚</text>
+                        </svg>
+                    </div>
+                    <h2 class="fanlar-cta__title">Fanlarni chuqur o'rganing</h2>
+                    <p class="fanlar-cta__description">
+                        Har bir fan bo‘yicha batafsil ma'lumotlar, mavzular va testlar sizni kutmoqda.
+                    </p>
+                    <a href="./testlar.html" class="fanlar-cta__button cta-button cta-button--large">
+                        <span class="cta-button__text">Testlarni boshlash</span>
+                        <span class="cta-button__ripple" aria-hidden="true"></span>
+                        <span class="cta-button__glow" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Dark Blue -->
+    <!-- ============================================ -->
+    <footer class="footer" role="contentinfo" aria-label="Sayt pastki qismi">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 4L22.5 14.5L33 17L24 24L26.5 34.5L20 29L13.5 34.5L16 24L7 17L17.5 14.5L20 4Z" fill="currentColor" />
+                        </svg>
+                        <span>GrantWay</span>
+                    </a>
+                    <p class="footer__description">Grant sari ishonchli yo'l</p>
+                </div>
+                
+                <nav class="footer__nav" aria-label="Footer menyusi">
+                    <ul class="footer__nav-list">
+                        <li><a href="../index.html">Bosh sahifa</a></li>
+                        <li><a href="./fanlar.html">Fanlar</a></li>
+                        <li><a href="./testlar.html">Testlar</a></li>
+                        <li><a href="./yangiliklar.html">Yangiliklar</a></li>
+                        <li><a href="./aloqa.html">Aloqa</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer__social">
+                    <span class="footer__social-label">Biz bilan bog'laning</span>
+                    <div class="footer__social-links">
+                        <a href="#" aria-label="Telegram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M22 2L2 11L10 14L13 22L16 16L22 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                <path d="M16 16L20 20M16 16L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M10 9L15 12L10 15V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 GrantWay. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================ -->
+    <script src="../script.js" defer></script>
+    <script src="../pages/pages.js" defer></script>
+</body>
+</html>

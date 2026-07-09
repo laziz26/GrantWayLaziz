@@ -2242,3 +2242,74 @@ document.addEventListener('DOMContentLoaded', () => {
     
     console.log('📞 Aloqa sahifasi muvaffaqiyatli yuklandi!');
 });
+
+
+/**
+ * ============================================
+ * FANLAR STATISTIKA COUNTER
+ * ============================================
+ */
+class FanlarCounterManager {
+    constructor() {
+        this.counterElements = document.querySelectorAll('.fanlar-statistic-item__number');
+        this.animationRunning = new Set();
+        this.init();
+    }
+    
+    init() {
+        if (!this.counterElements.length) return;
+        
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        if (!this.animationRunning.has(element)) {
+                            this.animateCounter(element);
+                            this.animationRunning.add(element);
+                        }
+                    }
+                });
+            },
+            {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            }
+        );
+        
+        this.counterElements.forEach(element => {
+            observer.observe(element);
+        });
+    }
+    
+    animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-count'), 10);
+        const duration = parseInt(element.getAttribute('data-duration'), 10) || 1500;
+        const startTime = performance.now();
+        const startValue = 0;
+        
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            const eased = 1 - Math.pow(1 - progress, 4);
+            const current = Math.round(startValue + (target - startValue) * eased);
+            
+            element.textContent = current;
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent = target;
+            }
+        };
+        
+        requestAnimationFrame(updateCounter);
+    }
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    const fanlarCounter = new FanlarCounterManager();
+    console.log('📚 Fanlar sahifasi muvaffaqiyatli yuklandi!');
+});
