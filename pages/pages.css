@@ -25,7 +25,6 @@
     overflow: hidden;
     pointer-events: none;
 }
-
 .math-hero__formula {
     position: absolute;
     font-family: var(--font-display);
