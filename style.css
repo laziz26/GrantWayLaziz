@@ -212,7 +212,12 @@ ol {
     padding: var(--spacing-4) 0;
     transition: background-color var(--transition-base), box-shadow var(--transition-base);
 }
-
+.header__logo {
+    border-radius: 30%;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
 .header--scrolled {
     background-color: rgba(10, 14, 39, 0.85);
     backdrop-filter: var(--glass-blur);
@@ -220,18 +225,16 @@ ol {
     box-shadow: var(--shadow-lg);
 }
 
-.header__background {
+.section1__background {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: var(--z-below);
     background-image:url(./assets/images/grant-background.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
-    filter: blur(2px);
+    opacity: 0.88;
 }
 
 .header__overlay {
@@ -277,7 +280,7 @@ ol {
 }
 
 .header__logo-text {
-    letter-spacing: -0.5px;
+    font-size: 30px;
 }
 
 /* Navigation */
@@ -1273,13 +1276,9 @@ ol {
 }
 
 .footer__logo {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-3);
-    color: var(--color-white);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-lg);
-    text-decoration: none;
+    width: 400px;
+    height: 130px;
+    border-radius: 30px;
 }
 
 .footer__logo svg {

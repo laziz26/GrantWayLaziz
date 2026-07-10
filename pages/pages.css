@@ -6673,6 +6673,10 @@
     .contact-hero__title {
         font-size: var(--font-size-5xl);
     }
+
+    .math-tips__timeline {
+        margin-left: 20px;
+    }
     
     .contact-section__grid {
         grid-template-columns: 1fr 1fr;
@@ -6922,7 +6926,7 @@
 /* ============================================ */
 /* RESPONSIVE: Fanlar */
 /* ============================================ */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .fanlar-hero__title {
         font-size: var(--font-size-5xl);
     }
