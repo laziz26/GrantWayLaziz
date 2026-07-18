@@ -918,6 +918,9 @@
     }
     
     .math-videos__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-6);
     }
@@ -1734,6 +1737,9 @@
 
 .history-videos__grid {
     display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
 }
@@ -2707,6 +2713,9 @@
 
 .language-videos__grid {
     display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
 }
@@ -3666,6 +3675,9 @@
 
 .chemistry-videos__grid {
     display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
 }
@@ -4630,6 +4642,9 @@
 
 .english-videos__grid {
     display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
 }
