@@ -5024,7 +5024,7 @@
     font-family: var(--font-display);
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-white);
+    color: var(--color-accent-light);
     line-height: var(--line-height-tight);
     margin-bottom: var(--spacing-4);
     letter-spacing: -1px;
